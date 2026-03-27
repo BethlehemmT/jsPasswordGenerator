@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>password generator</h2>
+
+    <!--div is a division box its used for organzing code so when you
+    edit or manipulate it in js/css, its easier to target the specific 
+    
+        class is the div name. its the name you will refer to when editing it
+        so in this case, the name for this div is called input-box. 
+
+        think of  it as hey this is the box that holds password input. 
+        
+        input type = "text" this line is the input type. what type of input 
+        is this box going to be? in this case, its a text box. so users 
+        can input txt only.
+
+        class="passbox" this gives the input from users a name for styling or js use. 
+
+        placeholder = generated password> this shows inside the box until the user types something
+        its a placeholder. -->
+        
+        <div class="input-box">
+        <input type="text" class="passBox" placeholder="Generated Password">
+    </div>
+
+    <input type="range" min="1" max="30" value="8">
+
+    </input>
+    <div class="row">
+        <p>Password Length</p>
+        <span>4</span>
+
+    </div>
+
+ <div class="row">
+ 
+        <label for="lowercase">Inlcude Lowercase Letters(a-z)</label>
+        <input type="checkbox" name="lowercase" id="lowercase" >
+    </div>
+
+
+     <div class="row">
+ 
+        <label for="uppercase">Inlcude Uppercase Letters(A-Z)</label>
+        <input type="checkbox" name="uppercase" id="uppercase" >
+    </div>
+
+
+     <div class="row">
+ 
+        <label for="numbers">Inlcude numbers (0-9)</label>
+        <input type="checkbox" name="numbers" id="numbers" >
+    </div>
+
+
+     <div class="row">
+ 
+        <label for="symbols">Inlcude symbols(@-*)</label>
+        <input type="checkbox" name="symbols" id="symbols" >
+    </div>
+
+<!-- now lets make thebuttone that will say "generate password"-->
+ <button type="button" class="generatePassword">Generate Password</button>
+
+ 
+   <!--now after you make it, g to style sheet and edit the button. 
+   make it bigger, smaller, etc.
+   
+   dont forget to give the button a different color
+   when the cursor is hovering over it. 
+   makes it more interactive and user friendly. 
+   so you'll make two ".generatePassword" rulesin css. 
+   -->
+ 
+
+ 
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
