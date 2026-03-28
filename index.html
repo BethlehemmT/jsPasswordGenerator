@@ -30,15 +30,15 @@
         its a placeholder. -->
         
         <div class="input-box">
-        <input type="text" class="passBox" placeholder="Generated Password">
+        <input type="text" class="passBox" id="passBox" placeholder="Generated Password">
     </div>
 
-    <input type="range" min="1" max="30" value="8">
+    <input type="range" min="1" max="30" value="8" id="inputSlider">
 
     </input>
     <div class="row">
         <p>Password Length</p>
-        <span>4</span>
+        <span id="sliderValue">4</span>
 
     </div>
 
@@ -70,7 +70,7 @@
     </div>
 
 <!-- now lets make thebuttone that will say "generate password"-->
- <button type="button" class="generatePassword">Generate Password</button>
+ <button type="button" class="generatePassword" id="genPass">Generate Password</button>
 
  
    <!--now after you make it, g to style sheet and edit the button. 
@@ -82,6 +82,7 @@
    so you'll make two ".generatePassword" rulesin css. 
    -->
  
+   <script src="script.js"></script>
 
  
 
